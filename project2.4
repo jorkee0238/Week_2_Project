@@ -1,0 +1,21 @@
+import datetime
+
+now = datetime.datetime.now()
+
+print("jorkee0238 Spreadsheet Automation Menu")
+
+menu = ["Input Data", "View Current Data", "Generate Report"]
+
+
+print("Please choose from an option below")
+
+for index, item in enumerate(menu, start=1):
+    print(f"{index}. {item}")
+    
+selection = int(input())
+
+if selection > 0 and selection < 4:
+    print(f"You selected {selection} at {now}")
+
+else:
+    print("Error: Invalid choice selected.")
